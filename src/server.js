@@ -12,4 +12,5 @@ app.use('/api', require('../routes/api.js')(express));
 //variable to be used in test/
 var server = app.listen(port);    
 
+//exports to test 
 module.exports = server;
