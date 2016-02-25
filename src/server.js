@@ -8,9 +8,7 @@ var app = express();
 var port = 3000; 
 
 //routes
-app.get('/', function(req, res){
-	res.json({hello: "world"});
-});
+app.use('/api', require('../routes/api.js')(express));
 
 
 app.listen(port, function(){
