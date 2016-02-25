@@ -16,7 +16,7 @@ describe('API', function(){
 	});
 
 	//tests route 'api/v1' for a specified json object of {hellp: "world"}
-	it('/v1/ should return specified object', function apiTest(done){
+	it('/v1/ should return json object(s)', function apiTest(done){
 		request(server)
 			.get('/api/v1')
 			.set('Accept', 'application/json')
