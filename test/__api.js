@@ -21,6 +21,7 @@ describe('API', function(){
 			.get('/api/v1')
 			.set('Accept', 'application/json')
 			.expect('Content-Type', /json/, done)
+			//or can add this for test of specific json object
 			//.expect(200, {hello: "world"}, done)
 
 	});
